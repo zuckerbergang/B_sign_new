@@ -38,9 +38,9 @@ public class DailyTask {
             printTime();
             log.debug("任务启动中");
             for (Task task : dailyTasks) {
-                log.info("------{}开始------", task.getName());
+                log.info("---🚩{}开始🚩-----", task.getName());
                 task.run();
-                log.info("------{}结束------\n", task.getName());
+                log.info("-----{}结束------\n", task.getName());
                 taskSuspend();
             }
             log.info("本日任务已全部执行完毕");
